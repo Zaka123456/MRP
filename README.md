@@ -11,7 +11,7 @@ Project is implemented a two-stage pipeline:
 1. **Forecasting** – Benchmarking (Random Forest) and machine learning models (XGBoost, CatBoost) against deep learning methods (LSTM).
 2. **Feature Interpretation** – Using SHAP analysis to identify the most important predictors of sales.
 
-The best-performing model, **Stacked LSTM**, achieved **R² = 0.974**, **sMAPE = 5.09%**, **MAE = 25.9**, and **RMSE = 54.6**, demonstrating strong predictive capability for daily retail sales.
+The best-performing model, **Stacked LSTM**, achieved **R² = 0.972**, **sMAPE = 5.82%**, **MAE = 28.50**, and **RMSE = 57.04**, demonstrating strong predictive capability for daily retail sales.
 
 ---
 
@@ -154,7 +154,7 @@ Output: `Feature_Selected_SHAP_V2.csv`
 
 ## 💡 Key Findings
 
-* **Stacked LSTM** consistently outperformed ensemble models (with R² = 0.974), but at higher computational cost.
+* **Stacked LSTM** consistently outperformed ensemble models (with R² = 0.972), but at higher computational cost.
 * **Tree-based methods (XGBoost, CatBoost)** achieved competitive accuracy with much faster runtime.
 * **Inclusion of the weather feature tempmax** led to a 0.3% improvement in explained variance for the LSTM model. 
 * **Combining lag and weather features** further improved accuracy, yielding a 3.9% gain in explained variance and a 4.64% reduction in sMAPE.
