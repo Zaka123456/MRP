@@ -124,7 +124,7 @@ Main Output: `DataCo_report.html` and final data file "Final_Selected_Features_n
 
 ```
 
-**### 3. Train Forecasting Models**
+### 3. Train Forecasting Models
 
 Run each notebook:
 
@@ -134,7 +134,8 @@ Run each notebook:
 * `04_LSTM.ipynb` → Stacked LSTM
 
 ```
-**### 4. Feature Importance with SHAP**
+
+### 4. Feature Importance with SHAP
 
 * Case A. Run without plots
 ```bash
