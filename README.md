@@ -120,10 +120,11 @@ Run the preprocessing and analysis files in following order:
 - `10_EDA_V2.ipynb`
 
 ```
-Output: `DataCo_report.html` and final data file "Final_Selected_Features_new.csv"
+Main Output: `DataCo_report.html` and final data file "Final_Selected_Features_new.csv"
 
 
-### 3. Train Forecasting Models
+
+**### 3. Train Forecasting Models**
 
 Run each notebook:
 
@@ -132,14 +133,15 @@ Run each notebook:
 * `03_XGB.ipynb` → XGBoost
 * `04_LSTM.ipynb` → Stacked LSTM
 
-### 4. Feature Importance with SHAP
-* Option A. Run without plots
+**### 4. Feature Importance with SHAP**
+
+* Case A. Run without plots
 ```bash
 python 11_shap_validation_V2.py
 ```
 Output: `Feature_Selected_SHAP_V2.csv`
 
-* Option B. Run with plots
+* Case B. Run with plots
 ```bash
 python shap_validation_V2_with_plots.py
 ```
