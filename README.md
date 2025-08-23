@@ -39,6 +39,7 @@ The best-performing model, **Stacked LSTM**, achieved **R² = 0.974**, **sMAPE =
 ---
 
 ## 🔄 Workflow & Code Files
+![Project Flowchart](MRP/Project%20Flowchart/workflow.jpg)
 
 
 
