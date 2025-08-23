@@ -97,11 +97,13 @@ The best-performing model, **Stacked LSTM**, achieved **R² = 0.972**, **sMAPE =
 ### 1. Prepare Environment
 
 ```bash
-git clone <repo_link>
-cd Retail-Sales-Forecasting
+git clone https://github.com/Zaka123456/MRP.git
+cd MRP
 ```
-# Install dependencies
+
+```Install dependencies
 pip install pandas numpy scikit-learn matplotlib seaborn shap xgboost catboost tensorflow ydata-profiling
+```
 
 ### 2. Run Data Preparation
 
