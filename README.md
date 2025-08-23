@@ -1,6 +1,6 @@
 # 🌦️ Retail Sales Forecasting with Weather-Enhanced Machine Learning
 
-**Toronto Metropolitan University – DS8012 Major Research Project (MRP)**
+**Toronto Metropolitan University – Major Research Project (MRP)**
 
 ## 📄 Description
 
