@@ -126,7 +126,7 @@ Main Output: `DataCo_report.html` and final data file "Final_Selected_Features_n
 
 ### 3. Train Forecasting Models
 
-Run each notebook:
+* Run each notebook:
 
 * `01_RF.ipynb` → Random Forest
 * `02_CatBoost.ipynb` → CatBoost
