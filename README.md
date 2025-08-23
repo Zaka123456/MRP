@@ -99,8 +99,9 @@ The best-performing model, **Stacked LSTM**, achieved **R² = 0.972**, **sMAPE =
 ```bash
 git clone <repo_link>
 cd Retail-Sales-Forecasting
-pip install -r requirements.txt
 ```
+# Install dependencies
+pip install pandas numpy scikit-learn matplotlib seaborn shap xgboost catboost tensorflow ydata-profiling
 
 ### 2. Run Data Preparation
 
@@ -125,13 +126,7 @@ jupyter notebook 05_EDA.ipynb
 jupyter notebook 10_EDA_V2.ipynb
 ```
 
-Generate profiling report (optional but recommended):
-
-```bash
-python profiling_report.py
-```
-
-Output: `reports/DataCo_Profiling_Report.html`
+Output: `DataCo_report.html` and Final_Selected_Features_new.csv
 
 ### 4. Train Forecasting Models
 
@@ -140,7 +135,7 @@ Run each notebook:
 * `01_RF.ipynb` → Random Forest
 * `02_CatBoost.ipynb` → CatBoost
 * `03_XGB.ipynb` → XGBoost
-* `04_LSTM.ipynb` → LSTM & Stacked LSTM
+* `04_LSTM.ipynb` → Stacked LSTM
 
 ### 5. Feature Importance with SHAP
 * Option A. Run without plots
