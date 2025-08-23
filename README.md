@@ -9,7 +9,7 @@ This project investigates how **external weather features** (temperature, precip
 project is implemented a two-stage pipeline:
 
 1. **Forecasting** – Benchmarking statistical (ARIMA) and machine learning models (Random Forest, XGBoost, CatBoost) against deep learning methods (LSTM, CNN-LSTM, GRU).
-2. **Feature Interpretation** – Using SHAP analysis after RFE-based feature selection to identify the most important predictors of sales.
+2. **Feature Interpretation** – Using SHAP analysis to identify the most important predictors of sales.
 
 The best-performing model, **Stacked LSTM**, achieved **R² = 0.974**, **sMAPE = 5.09%**, **MAE = 25.9**, and **RMSE = 54.6**, demonstrating strong predictive capability for daily retail sales.
 
