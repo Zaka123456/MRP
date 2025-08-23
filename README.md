@@ -119,10 +119,10 @@ Run the preprocessing and analysis files in following order:
 - `09_Feature_Preparation.ipynb`
 - `10_EDA_V2.ipynb`
 
-```
+
 Main Output: `DataCo_report.html` and final data file "Final_Selected_Features_new.csv"
 
-
+```
 
 **### 3. Train Forecasting Models**
 
@@ -133,6 +133,7 @@ Run each notebook:
 * `03_XGB.ipynb` → XGBoost
 * `04_LSTM.ipynb` → Stacked LSTM
 
+```
 **### 4. Feature Importance with SHAP**
 
 * Case A. Run without plots
