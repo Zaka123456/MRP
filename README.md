@@ -51,7 +51,7 @@ The best-performing model, **Stacked LSTM**, achieved **R² = 0.972**, **sMAPE =
 * `07_aggregate_to_daily.py` – Aggregates raw transactional data into **daily-location-level sales** with pivoted categorical features.
 * `06_Weather_features_fetching.ipynb` – Fetches weather features (temperature, humidity, precipitation, etc.) from **Visual Crossing API**.
 * `08_Data_Cleaning_Weather.ipynb` – Cleans and imputes missing weather data.
-* `09_Feature_Preparation.ipynb` – Creates lag features (1, 7, 30 days), rolling means, and merges sales + weather datasets.
+* `09_Feature_Preparation.ipynb` – Creates lag features (1, 7, 30 days), and merges sales + weather datasets.
 
 ### **Exploratory Data Analysis (EDA)**
 
