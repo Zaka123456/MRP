@@ -1,5 +1,3 @@
-Data Files
+#Data Files
+#All data files are available at following link
 https://drive.google.com/drive/folders/1pl0u1p_XblSAgNjEd6PxyY4Yewh4G3fA
-
-EDA Profiling Report
-https://drive.google.com/drive/folders/1omCS-V1nwqjrlU7w0WRPWyYdaTpTGfpF
