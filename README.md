@@ -154,10 +154,10 @@ Output: `Feature_Selected_SHAP_V2.csv`
 
 ## 💡 Key Findings
 
-* **Stacked LSTM** consistently outperformed classical and ensemble models (R² = 0.974).
-* **Weather features** improved forecast accuracy, confirming their predictive role.
-* **Lag features** (1-day, 7-day) provided significant boost in temporal learning.
-* Product-category-specific models capture heterogeneous weather sensitivity.
+* **Stacked LSTM** consistently outperformed ensemble models (with R² = 0.974), but at higher computational cost.
+* **Tree-based methods (XGBoost, CatBoost)** achieved competitive accuracy with much faster runtime.
+* **Inclusion of the weather feature tempmax** led to a 0.3% improvement in explained variance for the LSTM model. 
+* **Combining lag and weather features** further improved accuracy, yielding a 3.9% gain in explained variance and a 4.64% reduction in sMAPE.
 
 ---
 
@@ -165,27 +165,20 @@ Output: `Feature_Selected_SHAP_V2.csv`
 
 * Missing values in weather features required imputation (e.g., solar radiation gaps).
 * Transactional data lacked 2018 beyond January, limiting horizon testing.
+* Limited data availability (only around 3 years of records).
+* Insufficient data for reinforcement learning experiments initially planned.
+* Potential bias from short time horizon in capturing long-term seasonality.
+
 
 
 ---
 
 ## 🚀 Future Work
 
-* Extend forecasting to monthly granularity for operational decision-making.
-* Implement **Prophet** and **Temporal Fusion Transformer (TFT)** for comparison.
-* Perform **SHAP analysis** on deep learning models for interpretability.
-* Develop full **RL-based inventory optimization** pipeline (SARSA, DQN, PPO).
+* Extend forecasting with GRU and CNN_LSTM hybrid architectures to enhance temporal feature learning.
+* Integrate forecasted sales into reinforcement learning agents for inventory optimization.
+* Develop category-specific forecasting for weather-sensitive and high-demand products to capture heterogeneity.
 
----
-
-## 📚 References
-
-(Full list in report, key examples below)
-
-* Makridakis et al. (2022). *M5 Competition: Findings & Conclusions*
-* Taghizadeh (2017). *ANN for weather-sensitive retail demand*
-* Sarker (2021). *Machine Learning: Algorithms & Research Directions*
-* Sarker (2021). *Deep Learning: Techniques, Taxonomy, Applications*
 
 ---
 
