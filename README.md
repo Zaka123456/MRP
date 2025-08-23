@@ -31,10 +31,9 @@ The best-performing model, **Stacked LSTM**, achieved **R² = 0.974**, **sMAPE =
 
 ## ❓ Research Questions
 
-1. Which forecasting techniques most accurately predict retail sales?
-2. Which features (transactional, weather, lag) are most important for retail sales forecasting?
-3. Do weather variables (e.g., temperature, precipitation) significantly impact retail sales predictions?
-4. Do lag features improve forecasting accuracy in retail sales forecasting?
+1. Which forecasting techniques most accurately predict retail sales? Also, which features (transactional, weather, lag) are most important for retail sales forecasting?
+2. Do weather variables (e.g., temperature, precipitation) significantly impact retail sales predictions?
+3. Do lag features improve forecasting accuracy in retail sales forecasting?
 
 ---
 
@@ -59,9 +58,15 @@ The best-performing model, **Stacked LSTM**, achieved **R² = 0.974**, **sMAPE =
 * `05_EDA.ipynb` – Initial exploratory analysis (distributions, seasonal decomposition, correlation heatmaps). It also generates an **automated data profiling report** (`DataCo_report.html`) using `ydata-profiling`.
 * `10_EDA_V2.ipynb` – Refined exploratory analysis (category-level trends, weather-sales sensitivity). It also do correlation-based filtering. This is then used for feature selection methods like Randdom forest feature importance and Recursive Feature Elimination (RFE)
 
-### **Feature Importance**
+### **Feature Importance & Explainability (XAI)**
 
 * `11_shap_validation_V2.py` – Runs **SHAP analysis**, saves top N most informative features for downstream modeling.
+- `shap_validation_V2_with_plots.py` – Extended SHAP script:  
+  - Saves top features dataset (`Feature_Selected_SHAP_V2.csv`)  
+  - Generates SHAP plots:  
+    - `shap_summary.png` – Beeswarm plot showing overall feature impact on predictions  
+    - `shap_bar.png` – Bar chart of mean absolute SHAP values  
+   - Output is stored in `/MRP/SHAP_Plots/` folder in GitHub 
 
 ### **Forecasting Models with albation studies**
 
