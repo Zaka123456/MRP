@@ -102,7 +102,7 @@ cd MRP
 ```
 
 ```
-Install dependencies
+#Install dependencies
 pip install pandas numpy scikit-learn matplotlib seaborn shap xgboost catboost tensorflow ydata-profiling
 ```
 
