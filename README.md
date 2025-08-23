@@ -40,8 +40,15 @@ The best-performing model, **Stacked LSTM**, achieved **R² = 0.974**, **sMAPE =
 
 ## 🔄 Workflow & Code Files
 
+### **Data Documentation**
+
+* `01_Data_Co_Data_Dictionary.ipynb` – Provides definitions of DataCo dataset fields (53 columns: transactional, customer, product, and shipping attributes).
+* `02_Weather_Features_Data_Dictionary.ipynb` – Describes weather attributes fetched from Visual Crossing API (temperature, humidity, precipitation, snow, solar radiation, etc.).
+
 ### **Data Preparation**
 
+* `03_Lat_Lon.ipynb` – Extracts and prepares ~11,000 unique latitude–longitude pairs for weather API queries. Outputs unique_lat_lon.csv.
+* `04_Data_Co.ipynb` – Initial cleaning of DataCo raw file (handling nulls, dropping masked fields, converting dates to datetime, deriving time features).
 * `07_aggregate_to_daily.py` – Aggregates raw transactional data into **daily-location-level sales** with pivoted categorical features.
 * `06_Weather_features_fetching.ipynb` – Fetches weather features (temperature, humidity, precipitation, etc.) from **Visual Crossing API**.
 * `08_Data_Cleaning_Weather.ipynb` – Cleans and imputes missing weather data.
@@ -50,19 +57,20 @@ The best-performing model, **Stacked LSTM**, achieved **R² = 0.974**, **sMAPE =
 ### **Exploratory Data Analysis (EDA)**
 
 * `05_EDA.ipynb` – Initial exploratory analysis (distributions, seasonal decomposition, correlation heatmaps). It also generates an **automated data profiling report** (`DataCo_report.html`) using `ydata-profiling`.
-* `10_EDA_V2.ipynb` – Refined exploratory analysis (category-level trends, weather-sales sensitivity).
+* `10_EDA_V2.ipynb` – Refined exploratory analysis (category-level trends, weather-sales sensitivity). It also do correlation-based filtering. This is then used for feature selection methods like Randdom forest feature importance and Recursive Feature Elimination (RFE)
 
+### **Feature Importance**
 
-### **Forecasting Models**
+* `11_shap_validation_V2.py` – Runs **SHAP analysis**, saves top N most informative features for downstream modeling.
+
+### **Forecasting Models with albation studies**
 
 * `01_RF.ipynb` – Random Forest with MinMax scaling.
 * `02_CatBoost.ipynb` – CatBoost regressor with categorical feature handling.
 * `03_XGB.ipynb` – XGBoost with hyperparameter tuning.
 * `04_LSTM.ipynb` – LSTM and Stacked LSTM with Keras (time-series reshaping, feature scaling).
 
-### **Feature Importance**
 
-* `11_shap_validation_V2.py` – Runs **SHAP analysis** after RFE, saves top N most informative features for downstream modeling.
 
 ---
 
