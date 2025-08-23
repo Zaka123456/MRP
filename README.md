@@ -6,9 +6,9 @@
 
 This project investigates how **external weather features** (temperature, precipitation, wind, solar radiation, etc.) influence **retail e-commerce sales forecasting** using the **DataCo Supply Chain dataset** (2015–2017) enriched with **Visual Crossing weather data**.
 
-project is implemented a two-stage pipeline:
+Project is implemented a two-stage pipeline:
 
-1. **Forecasting** – Benchmarking statistical (ARIMA) and machine learning models (Random Forest, XGBoost, CatBoost) against deep learning methods (LSTM, CNN-LSTM, GRU).
+1. **Forecasting** – Benchmarking (Random Forest) and machine learning models (XGBoost, CatBoost) against deep learning methods (LSTM).
 2. **Feature Interpretation** – Using SHAP analysis to identify the most important predictors of sales.
 
 The best-performing model, **Stacked LSTM**, achieved **R² = 0.974**, **sMAPE = 5.09%**, **MAE = 25.9**, and **RMSE = 54.6**, demonstrating strong predictive capability for daily retail sales.
