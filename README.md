@@ -39,9 +39,6 @@ The best-performing model, **Stacked LSTM**, achieved **R² = 0.974**, **sMAPE =
 ---
 
 ## 🔄 Workflow & Code Files
-![Project Flowchart](MRP/Project%20Flowchart/Workflow.jpg)
-
-
 
 ### **Data Preparation**
 
@@ -52,9 +49,9 @@ The best-performing model, **Stacked LSTM**, achieved **R² = 0.974**, **sMAPE =
 
 ### **Exploratory Data Analysis (EDA)**
 
-* `05_EDA.ipynb` – Initial exploratory analysis (distributions, seasonal decomposition, correlation heatmaps).
+* `05_EDA.ipynb` – Initial exploratory analysis (distributions, seasonal decomposition, correlation heatmaps). It also generates an **automated data profiling report** (`DataCo_report.html`) using `ydata-profiling`.
 * `10_EDA_V2.ipynb` – Refined exploratory analysis (category-level trends, weather-sales sensitivity).
-* `profiling_report.py` – Generates an **automated data profiling report** (`DataCo_Profiling_Report.html`) using `ydata-profiling`.
+
 
 ### **Forecasting Models**
 
