@@ -61,7 +61,7 @@ The best-performing model, **Stacked LSTM**, achieved **R² = 0.972**, **sMAPE =
 ### **Feature Importance & Explainability (XAI)**
 
 * `11_shap_validation_V2.py` – Runs **SHAP analysis**, saves top N most informative features for downstream modeling.
-- `shap_validation_V2_with_plots.py` – Extended SHAP script:  
+* `shap_validation_V2_with_plots.py` – Extended SHAP script, it does the following:
   - Saves top features dataset (`Feature_Selected_SHAP_V2.csv`)  
   - Generates SHAP plots:  
     - `shap_summary.png` – Beeswarm plot showing overall feature impact on predictions  
