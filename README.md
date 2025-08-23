@@ -106,32 +106,24 @@ cd MRP
 pip install pandas numpy scikit-learn matplotlib seaborn shap xgboost catboost tensorflow ydata-profiling
 ```
 
-### 2. Run Data Preparation
+### 2. Run Data Preparation & EDA  
 
-```bash
-# Aggregate transactional data to daily-level
-python 07_aggregate_to_daily.py
+Run the preprocessing and analysis files in following order:
+
+- `03_Lat_Lon.ipynb` 
+- `04_Data_Co.ipynb`
+- `05_EDA.ipynb`
+- `06_Weather_features_fetching.ipynb`
+- `07_aggregate_to_daily.py` – Need to run it in terminal  
+- `08_Data_Cleaning_Weather.ipynb`
+- `09_Feature_Preparation.ipynb`
+- `10_EDA_V2.ipynb`
+
 ```
+Output: `DataCo_report.html` and final data file "Final_Selected_Features_new.csv"
 
-Output: `Data_Co_Daily_By_Location.csv`
 
-```bash
-# Run notebooks sequentially for weather fetching, cleaning, and merging
-jupyter notebook 06_Weather_features_fetching.ipynb
-jupyter notebook 08_Data_Cleaning_Weather.ipynb
-jupyter notebook 09_Feature_Preparation.ipynb
-```
-
-### 3. Exploratory Data Analysis
-
-```bash
-jupyter notebook 05_EDA.ipynb
-jupyter notebook 10_EDA_V2.ipynb
-```
-
-Output: `DataCo_report.html` and Final_Selected_Features_new.csv
-
-### 4. Train Forecasting Models
+### 3. Train Forecasting Models
 
 Run each notebook:
 
@@ -140,7 +132,7 @@ Run each notebook:
 * `03_XGB.ipynb` → XGBoost
 * `04_LSTM.ipynb` → Stacked LSTM
 
-### 5. Feature Importance with SHAP
+### 4. Feature Importance with SHAP
 * Option A. Run without plots
 ```bash
 python 11_shap_validation_V2.py
