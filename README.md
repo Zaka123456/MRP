@@ -66,14 +66,14 @@ The best-performing model, **Stacked LSTM**, achieved **R² = 0.972**, **sMAPE =
   - Generates SHAP plots:  
     - `shap_summary.png` – Beeswarm plot showing overall feature impact on predictions  
     - `shap_bar.png` – Bar chart of mean absolute SHAP values  
-   - Output is stored in `/MRP/SHAP_Plots/` folder in GitHub 
+   - Output is stored in `/MRP/SHAP Plots/` folder in GitHub 
 
 ### **Forecasting Models with albation studies**
 
 * `01_RF.ipynb` – Random Forest with MinMax scaling.
 * `02_CatBoost.ipynb` – CatBoost regressor with categorical feature handling.
 * `03_XGB.ipynb` – XGBoost with hyperparameter tuning.
-* `04_LSTM.ipynb` – LSTM and Stacked LSTM with Keras (time-series reshaping, feature scaling).
+* `04_LSTM.ipynb` – Stacked LSTM with Keras (time-series reshaping, feature scaling).
 
 
 
@@ -143,12 +143,25 @@ Run each notebook:
 * `04_LSTM.ipynb` → LSTM & Stacked LSTM
 
 ### 5. Feature Importance with SHAP
-
+* Option A. Run without plots
 ```bash
 python 11_shap_validation_V2.py
 ```
-
 Output: `Feature_Selected_SHAP_V2.csv`
+
+* Option B. Run with plots
+```bash
+python shap_validation_V2_with_plots.py
+```
+Outputs:
+- Feature_Selected_SHAP_V2.csv and two generated plots.
+- One plot is stored in `/MRP/SHAP Plots/shap_summary.png` folder in GitHub 
+- Other plot is stored in `/MRP/SHAP Plots/shap_bar.png` folder in GitHub 
+
+📊 Example Plots (Explainability)
+
+* SHAP Beeswarm Plot – shows how each feature drives sales predictions:
+* SHAP Bar Plot – average magnitude of each feature’s impact:
 
 ---
 
